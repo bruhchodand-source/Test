@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>School Management System</title>
+    <meta name="title" content="School Management System" />
+    <meta name="description" content="Advanced School Management System for modern educational institutions" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://school-management-system.vercel.app/" />
+    <meta property="og:title" content="School Management System" />
+    <meta property="og:description" content="Advanced School Management System for modern educational institutions" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://school-management-system.vercel.app/" />
+    <meta property="twitter:title" content="School Management System" />
+    <meta property="twitter:description" content="Advanced School Management System for modern educational institutions" />
+    <meta property="twitter:image" content="/og-image.png" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0078ff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="School Management" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Dark Mode Setup -->
+    <script>
+      // Check for saved theme preference or default to dark mode
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    </script>
+  </head>
+  <body class="bg-dark-900 text-text-primary antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
